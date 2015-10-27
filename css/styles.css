@@ -7,6 +7,15 @@ Normal 400
 Medium 500
 Bold 700**/
 
+/** ORDER OF CSS
+Positioning
+Display + Box Model
+Font Size
+Text Decorations
+Background Stuff
+Other / Misc.
+**/
+
 /**STYLES**/
 body {
     margin: 0;
@@ -14,8 +23,8 @@ body {
 
 .clearfix:before,
 .clearfix:after {
+    content: " ";
 	display: table;
-	content: " ";
 }
 
 .clearfix:after{
@@ -30,37 +39,37 @@ body {
 /**HEADER**/
 
 .top-container {
-    background: orange;
     height: 640px;
+    background: orange;
 }
 
 .header-title {
-    height: 100px;
-    width: 157px;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
     margin-top: 18px;
     margin-left: 34px;
+    width: 157px;
+    height: 100px;
+    text-indent: 150%;
     background: url("http://jeremyabrahams.github.io/mw-project-1/img/factory-logo.png") no-repeat;
     background-size: 157px 100px;
-    text-indent: 150%;
-    white-space: nowrap;
-    overflow: hidden;
-    float: left;
 }
 
 .header-nav {
-    margin-top: 35px;
     float: right;
+    margin-top: 35px;
 }
 
 .header-nav-list {
-    text-transform: uppercase;
     list-style: none;
     margin-right: 21px;
+    text-transform: uppercase;
 }
 
 .header-nav-list li {
-    margin-right: 14px;
     display: inline-block;
+    margin-right: 14px;
 }
 
 .header-nav-list a {
@@ -76,25 +85,25 @@ body {
 
 .banner-title {
     color: #fff;
+    font-size: 92px;
     font-family: roboto, tahoma, arial;
     font-weight: 100;
-    font-size: 92px;
     line-height: 107px;
     text-align: center;
 }
 
 .code-icon, .banner-text {
     font-size: 24px;
+    font-weight: 100;
     line-height: 28px;
     color: #fff;
-    font-weight: 100;
 }
 
 .banner-text {
-    font-family: roboto, tahoma, arial;
-    text-align: center;
     margin-top: 5px;
     margin-bottom: 22px;
+    font-family: roboto, tahoma, arial;
+    text-align: center;
 }
 
 .code-icon{
@@ -104,64 +113,64 @@ body {
 /**INTRO**/
 
 .intro {
+    margin-top: 150px;
     font-family: roboto, tahoma, arial;
     background-color: #fff;
-    margin-top: 150px;
+
 }
 
 .intro-text {
-    text-align: center;
-    font-weight: 100;
-    color: #C3BFBF;
-    font-size: 32px;
-    line-height: 56px;
     width: 844px;
     margin: 0 auto;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 100;
+    color: #C3BFBF;
+    line-height: 56px;
 }
 
 .intro-text::after {
     content: "";
     display: block;
-    width: 556px;
-    height: 30px;
-    background-image: url('http://jeremyabrahams.github.io/mw-project-1/img/divider.png');
-    background-repeat: no-repeat;
     margin-top: 77px;
     margin-bottom: 127px;
     margin-left: auto;
     margin-right: auto;
+    width: 556px;
+    height: 30px;
+    background-image: url('http://jeremyabrahams.github.io/mw-project-1/img/divider.png');
+    background-repeat: no-repeat;
 }
 
 /**GOALS**/
 
 .goals-header {
+    margin-top: 0px;
+    margin-bottom: 69px;
     color: #777;
     font-size: 28px;
     line-height: 33px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 0px;
-    margin-bottom: 69px;
 }
 
 .goals-list {
+    padding: 0;
+    margin-left: 55px;
+    margin-right: 55px;
     color: #777;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
     list-style: none;
-    padding: 0;
-    margin-left: 55px;
-    margin-right: 55px;
 }
 
 .goals-list li {
-    width: 28%;
-    /* height: 150px; */
     margin-right: 26px;
     margin-left: 26px;
     margin-bottom: 101px;
+    width: 28%;
     overflow: hidden;
     float: left;
 }
@@ -171,27 +180,27 @@ body {
 }
 
 .goals-list-subheader {
-    text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 /**COLEARNERS**/
 
 .colearners {
+    margin-top: 54px;
     font-family: roboto, tahoma, arial;
     background: #eee;
-    margin-top: 54px;
 }
 
 .colearners-header {
+    margin-top: 91px;
     color: #444;
     font-size: 28px;
     line-height: 53px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 91px;
 }
 
 .colearners-list {
@@ -202,23 +211,22 @@ body {
 
 .colearners-list li {
     float: left;
-    /* height: 150px; */
     overflow: hidden;
 }
 
 .colearners-list > li {
     margin-right: 21px;
+    margin-bottom: 70px;
     margin-left: 21px;
     width: 20%;
-    margin-bottom: 70px;
 }
 .colearners-list li img {
-    border-radius: 100%;
     display: block;
     width: 100px;
     height: 100px;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 100%;
 }
 
 .colearner-name {
@@ -244,76 +252,76 @@ body {
     display: inline-block;
     width: 22px;
     height: 20px;
-    background-image: url('http://jeremyabrahams.github.io/mw-project-1/img/slice.png');
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
     text-indent: 150%;
     white-space: no-wrap;
     overflow: hidden;
+    background-image: url('http://jeremyabrahams.github.io/mw-project-1/img/slice.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
 }
 
 .facebook {
     display: inline-block;
     width: 22px;
     height: 20px;
-    background-image: url('http://jeremyabrahams.github.io/mw-project-1/img/slice.png');
-    background-repeat: no-repeat;
-    background-position: -35px 0px;
     text-indent: 150%;
     white-space: no-wrap;
     overflow: hidden;
+    background-image: url('http://jeremyabrahams.github.io/mw-project-1/img/slice.png');
+    background-repeat: no-repeat;
+    background-position: -35px 0px;
 }
 
 .dribbble {
     display: inline-block;
     width: 22px;
     height: 20px;
-    background-image: url('http://jeremyabrahams.github.io/mw-project-1/img/slice.png');
-    background-repeat: no-repeat;
-    background-position: -70px 0px;
     text-indent: 150%;
     white-space: no-wrap;
     overflow: hidden;
+    background-image: url('http://jeremyabrahams.github.io/mw-project-1/img/slice.png');
+    background-repeat: no-repeat;
+    background-position: -70px 0px;
 }
 
 .linkedin {
     display: inline-block;
     width: 22px;
     height: 20px;
-    background-image: url('http://jeremyabrahams.github.io/mw-project-1/img/slice.png');
-    background-repeat: no-repeat;
-    background-position: -105px 0px;
     text-indent: 150%;
     white-space: no-wrap;
     overflow: hidden;
+    background-image: url('http://jeremyabrahams.github.io/mw-project-1/img/slice.png');
+    background-repeat: no-repeat;
+    background-position: -105px 0px;
 }
 
 /**INSTRUCTOR**/
 
 .instructor {
-    background: #757D75;
+    height: 701px;
     color: #fff;
     font-family: roboto, tahoma, arial;
-    height: 701px;
+    background: #757D75;
 }
 
 .instructor-header {
-    text-transform: uppercase;
+    margin-top: 208px;
+    margin-bottom: 15px;
+    margin-left: 84px;
     font-size: 18px;
     line-height: 53px;
     font-weight: 300;
-    margin-top: 208px;
-    margin-left: 84px;
-    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .instructor-name {
-    text-transform: uppercase;
     margin-top: 0px;
     margin-left: 84px;
     font-size: 36px;
     line-height: 42px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .instructor-company {
@@ -325,22 +333,22 @@ body {
 }
 
 .instructor-description {
-    color: #fff;
     margin-top: 0px;
     margin-left: 84px;
+    width: 500px;
+    color: #fff;
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
-    width: 500px;
 }
 
 /**BLOCK QUOTE**/
 
 .blockquote {
-    width: 903px;
+    display: block;
     margin-right: auto;
     margin-left: auto;
-    display: block;
+    width: 903px;
     font-family: roboto, tahoma, arial;
 }
 
@@ -355,8 +363,8 @@ body {
 }
 
 .quoted {
-    margin-top: 74px;
     display: block;
+    margin-top: 74px;
     text-align: center;
     color: #AAA;
     font-size: 22px;
@@ -373,24 +381,24 @@ body {
 
 .quoted-details-link {
     display: block;
-    color: #AAA;
     margin-bottom: 111px;
+    color: #AAA;
 }
 
 /**COURSE DETAILS**/
 
 .footer-container {
-    background: orange;
+    position:relative;
     height: 672px;
     font-family: roboto, tahoma, arial;
-    position:relative;
+    background: orange;
 }
 
 .course-details {
     padding-top: 141px;
-    color: #fff;
     margin-left: 92px;
     margin-bottom: 200px;
+    color: #fff;
     font-size: 36px;
     line-height: 38px;
     font-weight: 300;
@@ -443,32 +451,32 @@ dt {
 }
 
 .footer {
-    height: 126px;
-    width: 100%;
-    background: rgba(255, 153, 0, .8);
-    color: #fff;
     position: absolute;
     bottom: 0;
+    width: 100%;
+    height: 126px;
+    color: #fff;
+    background: rgba(255, 153, 0, .8);
 }
 
 .footer-title {
-    height: 64px;
-    width: 100px;
+    float: left;
     margin: 33px 32px 0px 32px;
-    background: url("http://jeremyabrahams.github.io/mw-project-1/img/factory-logo.png") no-repeat;
-    background-size: 100px 64px;
+    width: 100px;
+    height: 64px;
     text-indent: 150%;
     white-space: nowrap;
     overflow: hidden;
-    float: left;
+    background: url("http://jeremyabrahams.github.io/mw-project-1/img/factory-logo.png") no-repeat;
+    background-size: 100px 64px;
 }
 
 .footer-address {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
     display: block;
     margin-top: 55px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;    
 }
 
 .footer-address-2 {
