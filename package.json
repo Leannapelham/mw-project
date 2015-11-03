@@ -1,0 +1,23 @@
+{
+  "name": "mw-project",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Leannapelham/mw-project.git"
+  },
+  "author": "Leanna Pelham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leannapelham/mw-project/issues"
+  },
+  "homepage": "https://github.com/Leannapelham/mw-project",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0"
+  }
+}
