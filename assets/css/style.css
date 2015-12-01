@@ -32,8 +32,7 @@ body {
 /**HEADER**/
 .top-container {
   height: 640px;
-  width: 100%;
-  background: url("http://jeremyabrahams.github.io/mw-project-1/img/footer.jpg") no-repeat; }
+  background: url("https://raw.githubusercontent.com/jeremyabrahams/mw-project-1/master/img/hero.jpg") no-repeat; }
 
 .header-title {
   overflow: hidden;
@@ -53,7 +52,7 @@ body {
 
 .header-nav-list {
   list-style: none;
-  margin-right: 21px;
+  padding-right: 21px;
   text-transform: uppercase; }
 
 .header-nav-list li {
@@ -258,7 +257,7 @@ body {
   height: 701px;
   color: #fff;
   font-family: roboto, tahoma, arial;
-  background: #757D75; }
+  background: url('https://raw.githubusercontent.com/jeremyabrahams/mw-project-1/master/img/instructor.jpg'); }
 
 .instructor-header {
   margin-top: 208px;
@@ -335,7 +334,7 @@ body {
   position: relative;
   height: 672px;
   font-family: roboto, tahoma, arial;
-  background: orange; }
+  background: url("http://jeremyabrahams.github.io/mw-project-1/img/footer.jpg") no-repeat; }
 
 .course-details {
   padding-top: 141px;
