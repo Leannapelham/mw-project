@@ -32,7 +32,8 @@ body {
 /**HEADER**/
 .top-container {
   height: 640px;
-  background: orange; }
+  width: 100%;
+  background: url("http://jeremyabrahams.github.io/mw-project-1/img/footer.jpg") no-repeat; }
 
 .header-title {
   overflow: hidden;
